@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "strictNullChecks": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@zupit-it/create-workspace": ["packages/create-workspace/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

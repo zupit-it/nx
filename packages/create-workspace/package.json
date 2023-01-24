@@ -1,0 +1,8 @@
+{
+  "name": "@zupit-it/create-workspace",
+  "version": "0.0.1",
+  "bin": {
+    "create-workspace": "./bin/cli.js"
+  },
+  "type": "commonjs"
+}
