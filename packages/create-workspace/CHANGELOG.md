@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.1](https://github.com/zupit-it/nx/compare/create-workspace-0.1.0...create-workspace-0.1.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* add node auth token to release on github packages ([f04ad72](https://github.com/zupit-it/nx/commit/f04ad726c04f2a5944088df1402b8fba4f567494))
+
 ## 0.1.0 (2023-02-02)
 
 
