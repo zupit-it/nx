@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.2](https://github.com/zupit-it/nx/compare/create-workspace-0.1.1...create-workspace-0.1.2) (2023-02-02)
+
+
+### Bug Fixes
+
+* **create workspace:** use correct preset ([9fbba04](https://github.com/zupit-it/nx/commit/9fbba0432b1d7ecafaa0bfbffe2fc857c60110b0))
+
 ## [0.1.1](https://github.com/zupit-it/nx/compare/create-workspace-0.1.0...create-workspace-0.1.1) (2023-02-02)
 
 
