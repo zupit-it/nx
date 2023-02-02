@@ -43,7 +43,7 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["create-workspace:release", "create-workspace:deploy"]
+        "postTargets": ["create-workspace:release", "create-workspace:publish"]
       }
     },
     "release": {
@@ -53,7 +53,7 @@
         "notes": "${notes}"
       }
     },
-    "deploy": {
+    "publish": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
         "access": "public"
