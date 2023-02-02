@@ -1,7 +1,9 @@
 import { execSync } from 'child_process'
 
+const PRESET = '@zupit-it/workspace'
+
 function createWorkspace() {
-  return execSync('npm init nx-workspace --preset @zupit-it/workspace', {
+  return execSync(`npx create-nx-workspace@latest --preset ${PRESET}`, {
     stdio: 'inherit'
   })
 }
