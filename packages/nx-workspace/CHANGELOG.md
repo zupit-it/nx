@@ -9,6 +9,13 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 * use correct function ([ab10e6f](https://github.com/zupit-it/nx/commit/ab10e6f1f51e2f42655ad70d49a9d6b0282721c7))
 
+## [0.1.1](https://github.com/zupit-it/nx/compare/nx-workspace-0.1.0...nx-workspace-0.1.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* use correct function ([ab10e6f](https://github.com/zupit-it/nx/commit/ab10e6f1f51e2f42655ad70d49a9d6b0282721c7))
+
 ## 0.1.0 (2023-02-02)
 
 
