@@ -17,12 +17,14 @@ jobs:
         with:
           cache: npm
           node-version: 18
+          registry-url: 'https://npm.pkg.github.com'
       - run: npm ci --ignore-scripts
       - name: Version
         shell: bash
         run: npx nx affected --base=last-release --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Tag last-release
         shell: bash
         run: |
