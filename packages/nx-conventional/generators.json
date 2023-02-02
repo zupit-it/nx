@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "nx-conventional",
+  "version": "0.0.1",
+  "generators": {
+    "semantic-commit": {
+      "factory": "./src/generators/semantic-commit/generator",
+      "schema": "./src/generators/semantic-commit/schema.json",
+      "description": "semantic-commit generator"
+    },
+    "semantic-release": {
+      "factory": "./src/generators/semantic-release/generator",
+      "schema": "./src/generators/semantic-release/schema.json",
+      "description": "semantic-release generator"
+    }
+  }
+}

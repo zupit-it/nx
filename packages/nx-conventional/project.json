@@ -1,0 +1,78 @@
+{
+  "name": "nx-conventional",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nx-conventional/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nx-conventional",
+        "main": "packages/nx-conventional/src/index.ts",
+        "tsConfig": "packages/nx-conventional/tsconfig.lib.json",
+        "assets": [
+          "packages/nx-conventional/*.md",
+          {
+            "input": "./packages/nx-conventional/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-conventional/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-conventional",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-conventional",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "format": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "nx format:write --projects nx-conventional"
+          }
+        ],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/nx-conventional/**/*.ts",
+          "packages/nx-conventional/generators.json",
+          "packages/nx-conventional/executors.json",
+          "packages/nx-conventional/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/nx-conventional/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
+      }
+    }
+  },
+  "tags": []
+}

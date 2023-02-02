@@ -18,7 +18,9 @@
     "paths": {
       "@zupit-it/create-zupit-workspace": [
         "packages/create-zupit-workspace/src/index.ts"
-      ]
+      ],
+      "@zupit-it/nx-conventional": ["packages/nx-conventional/src/index.ts"],
+      "@zupit-it/nx-workspace": ["packages/nx-workspace/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
