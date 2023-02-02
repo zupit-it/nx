@@ -1,8 +1,12 @@
 {
-  "name": "@zupit-it/create-workspace",
+  "name": "@zupit-it/create-nx-workspace",
   "version": "0.0.1",
   "bin": {
     "create-workspace": "./bin/cli.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/zupit-it/nx",
   "type": "commonjs"
 }
