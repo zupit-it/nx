@@ -71,10 +71,7 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": [
-          "create-zupit-workspace:release",
-          "create-zupit-workspace:publish"
-        ],
+        "postTargets": ["nx-conventional:release", "nx-conventional:publish"],
         "push": true
       }
     },
