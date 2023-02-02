@@ -14,10 +14,7 @@ import { PackageJson } from 'nx/src/utils/package-json'
 import * as path from 'path'
 import { SemanticCommitGeneratorSchema } from './schema'
 
-export default async function (
-  tree: Tree,
-  options: SemanticCommitGeneratorSchema
-) {
+export default async function (tree: Tree) {
   updateJson(tree, 'package.json', (json: PackageJson) => {
     json.devDependencies = json.devDependencies ?? {}
     json.devDependencies['@commitlint/cli'] = '^17.4.2'
