@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.1](https://github.com/zupit-it/nx/compare/nx-conventional-0.1.0...nx-conventional-0.1.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* use correct package name for post targets ([9097c1d](https://github.com/zupit-it/nx/commit/9097c1dcf4ab48bea3fc465ddc08be3fbc8201f5))
+
 ## 0.1.0 (2023-02-02)
 
 
