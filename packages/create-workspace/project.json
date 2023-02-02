@@ -43,7 +43,8 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["create-workspace:release", "create-workspace:publish"]
+        "postTargets": ["create-workspace:release", "create-workspace:publish"],
+        "push": true
       }
     },
     "release": {
