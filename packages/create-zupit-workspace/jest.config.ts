@@ -7,11 +7,11 @@ const { exclude: _, ...swcJestConfig } = JSON.parse(
   readFileSync(`${__dirname}/.lib.swcrc`, 'utf-8')
 )
 export default {
-  displayName: 'create-workspace',
+  displayName: 'create-zupit-workspace',
   preset: '../../jest.preset.js',
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/create-workspace'
+  coverageDirectory: '../../coverage/packages/create-zupit-workspace'
 }

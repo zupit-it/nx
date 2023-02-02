@@ -16,7 +16,9 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@zupit-it/create-workspace": ["packages/create-workspace/src/index.ts"]
+      "@zupit-it/create-zupit-workspace": [
+        "packages/create-zupit-workspace/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
