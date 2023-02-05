@@ -82,7 +82,9 @@
     },
     "publish": {
       "executor": "ngx-deploy-npm:deploy",
+      "dependsOn": ["^build"],
       "options": {
+        "dryRun": true,
         "access": "public"
       }
     }
