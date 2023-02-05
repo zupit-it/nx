@@ -53,6 +53,7 @@
       "options": {
         "lintFilePatterns": [
           "packages/nx-conventional/**/*.ts",
+          "packages/nx-conventional/**/*.spec.ts",
           "packages/nx-conventional/generators.json",
           "packages/nx-conventional/executors.json",
           "packages/nx-conventional/package.json"

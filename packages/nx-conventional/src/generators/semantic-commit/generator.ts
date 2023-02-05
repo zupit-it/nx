@@ -1,18 +1,11 @@
 import {
-  addProjectConfiguration,
   formatFiles,
-  generateFiles,
-  getWorkspaceLayout,
   installPackagesTask,
-  names,
-  offsetFromRoot,
   Tree,
   updateJson
 } from '@nrwl/devkit'
 import { constants } from 'fs'
 import { PackageJson } from 'nx/src/utils/package-json'
-import * as path from 'path'
-import { SemanticCommitGeneratorSchema } from './schema'
 
 export default async function (tree: Tree) {
   updateJson(tree, 'package.json', (json: PackageJson) => {
