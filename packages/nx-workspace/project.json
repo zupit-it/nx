@@ -7,11 +7,13 @@
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
+      "dependsOn": ["^build"],
       "options": {
         "outputPath": "dist/packages/nx-workspace",
         "main": "packages/nx-workspace/src/index.ts",
         "tsConfig": "packages/nx-workspace/tsconfig.lib.json",
         "buildableProjectDepsInPackageJsonType": "peerDependencies",
+        "updateBuildableProjectDepsInPackageJson": true,
         "assets": [
           "packages/nx-workspace/*.md",
           {
