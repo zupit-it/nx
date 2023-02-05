@@ -71,8 +71,7 @@
       "options": {
         "preset": "conventional",
         "postTargets": ["nx-workspace:release", "nx-workspace:publish"],
-        "push": true,
-        "dryRun": true
+        "push": true
       }
     },
     "release": {
