@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.11](https://github.com/zupit-it/nx/compare/nx-workspace-0.1.10...nx-workspace-0.1.11) (2023-02-05)
+
+
+### Bug Fixes
+
+* **nx-workspace:** test remove release ([1f98e99](https://github.com/zupit-it/nx/commit/1f98e99a864f08e1a6947d9bec273997a50df2c0))
+
 ## [0.1.10](https://github.com/zupit-it/nx/compare/nx-workspace-0.1.9...nx-workspace-0.1.10) (2023-02-05)
 
 
