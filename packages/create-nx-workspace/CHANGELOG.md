@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.3](https://github.com/zupit-it/nx/compare/create-nx-workspace-0.1.2...create-nx-workspace-0.1.3) (2023-02-05)
+
+
+### Bug Fixes
+
+* **create-nx-workspace:** add implicit dependency ([1a4ad53](https://github.com/zupit-it/nx/commit/1a4ad53e19bc7b91b1b3ce331bc850916d4480be))
+
 ## [0.1.2](https://github.com/zupit-it/nx/compare/create-nx-workspace-0.1.1...create-nx-workspace-0.1.2) (2023-02-05)
 
 
