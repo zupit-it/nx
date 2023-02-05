@@ -67,10 +67,12 @@
     },
     "version": {
       "executor": "@jscutlery/semver:version",
+      "dependsOn": ["^build"],
       "options": {
         "preset": "conventional",
-        "postTargets": ["nx-workspace:publish"],
-        "push": true
+        "postTargets": ["nx-workspace:release", "nx-workspace:publish"],
+        "push": true,
+        "dryRun": true
       }
     },
     "release": {
