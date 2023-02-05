@@ -69,7 +69,7 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["nx-workspace:release", "nx-workspace:publish"],
+        "postTargets": ["nx-workspace:publish"],
         "push": true
       }
     },
