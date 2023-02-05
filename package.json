@@ -7,6 +7,7 @@
   },
   "private": true,
   "dependencies": {
+    "@nrwl/nx-cloud": "^15.0.3",
     "@swc/helpers": "~0.4.11",
     "tslib": "^2.3.0"
   },
