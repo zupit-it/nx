@@ -1,4 +1,4 @@
-name: Continous Integration
+name: CI
 
 on:
   pull_request:
@@ -7,10 +7,15 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set SHAs
+        uses: nrwl/nx-set-shas@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -20,11 +25,17 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Build
         run: npx nx affected --target=build
+
   format:
+    name: Format
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set SHAs
+        uses: nrwl/nx-set-shas@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -34,11 +45,17 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Format
         run: npx nx affected --target=format
+
   lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set SHAs
+        uses: nrwl/nx-set-shas@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -48,11 +65,17 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Lint
         run: npx nx affected --target=lint
+
   test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set SHAs
+        uses: nrwl/nx-set-shas@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -62,11 +85,17 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Test
         run: npx nx affected --target=test
+
   e2e:
+    name: E2E
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set SHAs
+        uses: nrwl/nx-set-shas@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
