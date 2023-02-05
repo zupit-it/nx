@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.1](https://github.com/zupit-it/nx/compare/create-nx-workspace-0.1.0...create-nx-workspace-0.1.1) (2023-02-05)
+
+
+### Bug Fixes
+
+* **create nx workspace:** change preset name ([cf39b15](https://github.com/zupit-it/nx/commit/cf39b151fea71b6e0adbf5084b7a163e13d798af))
+
 ## 0.1.0 (2023-02-05)
 
 
