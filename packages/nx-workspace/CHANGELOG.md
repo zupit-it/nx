@@ -2,6 +2,14 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.12](https://github.com/zupit-it/nx/compare/nx-workspace-0.1.11...nx-workspace-0.1.12) (2023-02-05)
+
+
+### Bug Fixes
+
+* **nx-workspace:** add depends on version ([f30d72c](https://github.com/zupit-it/nx/commit/f30d72c5818c6184e0483d3e8dc1b956194134f0))
+* **nx-workspace:** remove dry run ([7ded59a](https://github.com/zupit-it/nx/commit/7ded59a2a9a55b230892f4abeda0ea6c3830cb65))
+
 ## [0.1.11](https://github.com/zupit-it/nx/compare/nx-workspace-0.1.10...nx-workspace-0.1.11) (2023-02-05)
 
 
