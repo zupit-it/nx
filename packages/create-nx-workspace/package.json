@@ -1,6 +1,6 @@
 {
   "name": "@zupit-it/create-nx-workspace",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "bin": {
     "create-nx-workspace": "./bin/cli.js"
   },

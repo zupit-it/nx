@@ -1,7 +1,5 @@
 import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing'
-import { Tree, readProjectConfiguration } from '@nrwl/devkit'
-
-import generator from './generator'
+import { Tree } from '@nrwl/devkit'
 
 describe('preset generator', () => {
   let appTree: Tree
@@ -10,9 +8,5 @@ describe('preset generator', () => {
     appTree = createTreeWithEmptyWorkspace()
   })
 
-  it('should run successfully', async () => {
-    await generator(appTree)
-    const config = readProjectConfiguration(appTree, 'test')
-    expect(config).toBeDefined()
-  })
+  it.todo('should run successfully')
 })

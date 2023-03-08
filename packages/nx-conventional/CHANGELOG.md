@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.3](https://github.com/zupit-it/nx/compare/nx-conventional-0.1.2...nx-conventional-0.1.3) (2023-02-05)
+
+
+### Bug Fixes
+
+* stop using swc ([538312a](https://github.com/zupit-it/nx/commit/538312a8d91eb6f65c25a6e34b2f053459e40d6a))
+
 ## [0.1.2](https://github.com/zupit-it/nx/compare/nx-conventional-0.1.1...nx-conventional-0.1.2) (2023-02-05)
 
 

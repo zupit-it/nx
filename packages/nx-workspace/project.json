@@ -5,12 +5,15 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/js:swc",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
+      "dependsOn": ["^build"],
       "options": {
         "outputPath": "dist/packages/nx-workspace",
         "main": "packages/nx-workspace/src/index.ts",
         "tsConfig": "packages/nx-workspace/tsconfig.lib.json",
+        "buildableProjectDepsInPackageJsonType": "dependencies",
+        "updateBuildableProjectDepsInPackageJson": true,
         "assets": [
           "packages/nx-workspace/*.md",
           {
@@ -75,6 +78,7 @@
     },
     "version": {
       "executor": "@jscutlery/semver:version",
+      "dependsOn": ["^build"],
       "options": {
         "preset": "conventional",
         "postTargets": ["nx-workspace:release", "nx-workspace:publish"],
@@ -90,6 +94,7 @@
     },
     "publish": {
       "executor": "ngx-deploy-npm:deploy",
+      "dependsOn": ["^build"],
       "options": {
         "access": "public"
       }
