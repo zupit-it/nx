@@ -39,6 +39,17 @@
         ]
       }
     },
+    "format": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "nx format:check --projects nx-workspace"
+          }
+        ],
+        "parallel": false
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],

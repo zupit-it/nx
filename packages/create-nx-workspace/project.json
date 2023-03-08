@@ -19,7 +19,7 @@
       "options": {
         "commands": [
           {
-            "command": "nx format --projects create-nx-workspace --write"
+            "command": "nx format:check --projects create-nx-workspace"
           }
         ]
       }

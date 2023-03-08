@@ -41,7 +41,7 @@
       "options": {
         "commands": [
           {
-            "command": "nx format:write --projects nx-conventional"
+            "command": "nx format:check --projects nx-conventional"
           }
         ],
         "parallel": false
