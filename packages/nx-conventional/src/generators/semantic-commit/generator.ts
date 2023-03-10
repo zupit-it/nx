@@ -27,7 +27,7 @@ export default async function (tree: Tree) {
     })
   )
 
-  const commitMsg = `#!/usr/bin/env sh\n. "$(dirname -- "$0")/_/husky.sh"\n\nnpx --no -- commitlint --edit ${1}n`
+  const commitMsg = `#!/usr/bin/env sh\n. "$(dirname -- "$0")/_/husky.sh"\n\nnpx --no -- commitlint --edit \${1}\n`
   tree.write('.husky/commit-msg', commitMsg, {
     /* File mode indicating readable, writable, and executable by owner. */
     mode: constants.S_IRWXU
